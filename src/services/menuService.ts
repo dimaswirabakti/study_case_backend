@@ -2,8 +2,6 @@ import * as menuRepo from "../repositories/menuRepository";
 import { CreateMenuInput } from "../schemas/menuSchema";
 
 export const addMenu = async (data: CreateMenuInput) => {
-  // Nanti, Cek jika description kosong -> Panggil AI
-  // Kalo Sekarang Langsung simpan ke DB
   return await menuRepo.createMenu(data);
 };
 
@@ -12,7 +10,6 @@ export const getMenuById = async (id: number) => {
 };
 
 export const editMenu = async (id: number, data: CreateMenuInput) => {
-  // Disini nanti tempat logika cek apakah ID valid sebelum update
   return await menuRepo.updateMenu(id, data);
 };
 
