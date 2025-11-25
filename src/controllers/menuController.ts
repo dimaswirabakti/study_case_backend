@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import { createMenuSchema } from "../schemas/menuSchema";
 import * as menuService from "../services/menuService";
+import * as aiService from '../services/aiService';
 
 export const createMenu = async (
   req: Request,
@@ -139,6 +140,8 @@ export const getMenus = async (req: Request, res: Response): Promise<void> => {
       : undefined;
     const maxCal = req.query.max_cal ? Number(req.query.max_cal) : undefined;
 
+    const withAiSummary = req.query.with_ai_summary === 'true';
+
     const { menus, total } = await menuService.getAllMenus(
       page,
       perPage,
@@ -150,6 +153,11 @@ export const getMenus = async (req: Request, res: Response): Promise<void> => {
       sort
     );
 
+    let aiInsights = undefined;
+    if (withAiSummary) {
+        aiInsights = await aiService.generateMenuInsights(menus);
+    }
+
     const totalPages = Math.ceil(total / perPage);
 
     res.status(200).json({
@@ -160,6 +168,9 @@ export const getMenus = async (req: Request, res: Response): Promise<void> => {
         per_page: perPage,
         total_pages: totalPages,
       },
+      // gunakan spread operator agar field 'ai_insights'
+      // hanya muncul jika variabelnya tidak undefined.
+      ...(aiInsights && { ai_insights: aiInsights }) 
     });
   } catch (error) {
     console.error("Error fetching menus:", error);
