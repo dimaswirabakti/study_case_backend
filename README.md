@@ -1,4 +1,4 @@
-# Menu Catalog API (GDGoC Study Case)
+# Menu Catalog API (GDGoC UGM Study Case)
 
 Backend API yang modern untuk manajemen katalog restoran. Proyek ini dibangun sebagai bagian dari studi kasus GDGoC UGM, menampilkan implementasi CRUD lengkap, filter lanjutan, dokumentasi otomatis, dan integrasi kecerdasan buatan (AI) untuk analisis data menu.
 
