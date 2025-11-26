@@ -1,10 +1,8 @@
-# Menu Catalog API (GDGoC UGM Study Case)
+# Menu Catalog API (GDGoC UGM Backend Study Case)
 
-Backend API yang modern untuk manajemen katalog restoran. Proyek ini dibangun sebagai bagian dari studi kasus GDGoC UGM, menampilkan implementasi CRUD lengkap, filter lanjutan, dokumentasi otomatis, dan integrasi kecerdasan buatan (AI) untuk analisis data menu.
+Backend API untuk manajemen katalog restoran, dibangun sebagai bagian dari studi kasus GDGoC UGM dengan role Hacker dan fokus pada bidang backend. Proyek ini menampilkan implementasi CRUD lengkap, filter lanjutan, dokumentasi otomatis, dan integrasi kecerdasan buatan (AI) untuk analisis data menu.
 
 ## 🚀 Tech Stack
-
-Project ini dibangun menggunakan teknologi terkini dengan fokus pada *type-safety* dan performa:
 
 - **Runtime:** Node.js
 - **Framework:** Express.js
@@ -28,7 +26,7 @@ Project ini dibangun menggunakan teknologi terkini dengan fokus pada *type-safet
 4.  **OpenAPI Documentation**: Dokumentasi interaktif menggunakan Swagger UI.
 
 ## 🌐 Live Demo (Deployed)
-Project ini sudah di-deploy dan dapat diakses secara publik. Anda tidak perlu menginstallnya secara lokal untuk mencoba fitur-fiturnya.
+Project ini sudah di-deploy dan dapat diakses secara publik.
 
 * **Base URL:** `https://studycasebackend-nyoman.up.railway.app/`
 * **API Documentation (Swagger UI):** [Klik di sini untuk mencoba API](https://studycasebackend-nyoman.up.railway.app/api-docs)
@@ -92,11 +90,11 @@ Setelah server berjalan, dokumentasi lengkap mengenai endpoint, format request, 
 👉 [http://localhost:3000/api-docs](http://localhost:3000/api-docs)
 
 ## 🧪 Testing
-Aplikasi ini telah diuji dan lulus validasi menggunakan Postman Collection Runner yang mencakup skenario:
+Aplikasi ini telah lulus validasi menggunakan Postman Collection Runner yang mencakup skenario:
 
 * Validasi Schema Response (JSON Structure)
-* HTTP Status Codes (200, 201, 400, 404)
-* Logic CRUD (Create -> Read -> Update -> Delete)
+* HTTP Status Codes (200, 201, 404)
+* Logic CRUD (Create, Read, Update, Delete)
 * Fitur Pencarian & Filter
 
 ---
