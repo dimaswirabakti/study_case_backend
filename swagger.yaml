@@ -6,6 +6,8 @@ info:
 servers:
   - url: http://localhost:3000
     description: Local Development Server
+  - url: https://studycasebackend-nyoman.up.railway.app
+    description: Production Server (Railway)
 
 components:
   schemas:

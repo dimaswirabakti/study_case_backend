@@ -27,6 +27,12 @@ Project ini dibangun menggunakan teknologi terkini dengan fokus pada *type-safet
     * Akses endpoint `GET /menu?with_ai_summary=true` untuk mendapatkan analisis tentang dominasi kategori, rentang harga, dan rekomendasi strategi promosi berdasarkan data menu yang ada.
 4.  **OpenAPI Documentation**: Dokumentasi interaktif menggunakan Swagger UI.
 
+## 🌐 Live Demo (Deployed)
+Project ini sudah di-deploy dan dapat diakses secara publik. Anda tidak perlu menginstallnya secara lokal untuk mencoba fitur-fiturnya.
+
+* **Base URL:** `https://studycasebackend-nyoman.up.railway.app/`
+* **API Documentation (Swagger UI):** [Klik di sini untuk mencoba API](https://studycasebackend-nyoman.up.railway.app/api-docs)
+
 ## 🛠️ Prasyarat (Prerequisites)
 
 Pastikan di komputermu sudah terinstall:
